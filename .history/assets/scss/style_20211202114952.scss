@@ -92,9 +92,6 @@
   width: 100%;
   left: 0;
   bottom: 0;
-  background: white;
-  z-index: 8;
-  border-top: 1px solid var(--border-color);
 
   a {
     text-align: center;
@@ -135,26 +132,13 @@ form {
     color: var(--light-gray);
   }
 
-  input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]) {
+  input:not([type="radio"]),
+  input:not([type="checkbox"]),
+  input:not([type="submit"]) {
     width: 100%;
     border: 0;
     font-size: 0.8em;
-    font-weight: 600;
     border-bottom: 1px solid var(--text-color);
-  }
-
-  input[type="submit"] {
-    background-color: var(--primary-color);
-    color: white;
-    transition: all 0.3s ease-in-out;
-    border: 0;
-    font-weight: 600;
-    padding: 0.5em 2em;
-    border-radius: 5px;
-
-    &:hover {
-      background-color: var(--primary-font);
-    }
   }
 }
 /*------------------------------------*\

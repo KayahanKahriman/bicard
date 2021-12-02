@@ -92,9 +92,6 @@
   width: 100%;
   left: 0;
   bottom: 0;
-  background: white;
-  z-index: 8;
-  border-top: 1px solid var(--border-color);
 
   a {
     text-align: center;
@@ -150,7 +147,6 @@ form {
     border: 0;
     font-weight: 600;
     padding: 0.5em 2em;
-    border-radius: 5px;
 
     &:hover {
       background-color: var(--primary-font);

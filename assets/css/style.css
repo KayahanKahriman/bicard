@@ -3039,6 +3039,7 @@ a.text-dark:hover, a.text-dark:focus {
   --alt-text-color: #616e7d;
   --border-color: #eaeaea;
   --dark-color: #616e7d;
+  --light-gray: #bdc3c7;
   --app-bar-height: 4em;
   --profile-height: 7.5em;
   --fixed-buttons-height: 4em; }
@@ -3111,8 +3112,7 @@ body {
 .button-has-icon {
   display: flex;
   align-items: center;
-  justify-content: center;
-  column-gap: 1em; }
+  justify-content: center; }
   .button-has-icon img,
   .button-has-icon svg {
     width: 2em;
@@ -3168,6 +3168,22 @@ body {
   height: 100%;
   z-index: 4;
   background: #00000060; }
+
+#toggle-nav {
+  width: 1.5em;
+  height: 1.5em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-flow: column; }
+  #toggle-nav span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: white;
+    border-radius: 10px; }
+    #toggle-nav span:nth-of-type(1), #toggle-nav span:nth-of-type(3) {
+      width: 70%; }
 
 #app-bar {
   background-color: var(--primary-color);
@@ -3234,6 +3250,65 @@ body {
     padding-bottom: 1em; }
   #inline-content #modal-content {
     padding: 1em 0; }
+
+#bottom-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: var(--fixed-buttons-height);
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: white;
+  z-index: 8;
+  border-top: 1px solid var(--border-color); }
+  #bottom-nav a {
+    text-align: center; }
+    #bottom-nav a.active-link svg path {
+      fill: var(--primary-color) !important; }
+  #bottom-nav span {
+    font-size: 0.8em;
+    font-weight: 600;
+    color: var(--alt-text-color);
+    display: block; }
+
+#content {
+  height: calc(var(--app-bar-height)+var(--fixed-buttons-height));
+  top: var(--app-bar-height);
+  position: relative;
+  padding: 2em 0; }
+
+form ::placeholder {
+  opacity: 1;
+  color: var(--text-color); }
+
+form ::-webkit-input-placeholder {
+  opacity: 1;
+  color: var(--text-color); }
+
+form .form-title {
+  font-size: 1em;
+  font-weight: 300;
+  color: var(--light-gray); }
+
+form input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]) {
+  width: 100%;
+  border: 0;
+  font-size: 0.8em;
+  font-weight: 600;
+  border-bottom: 1px solid var(--text-color); }
+
+form input[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  transition: all 0.3s ease-in-out;
+  border: 0;
+  font-weight: 600;
+  padding: 0.5em 2em;
+  border-radius: 5px; }
+  form input[type="submit"]:hover {
+    background-color: var(--primary-font); }
 
 /*------------------------------------*\
     RESPONSIVE

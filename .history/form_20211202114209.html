@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="utf-8" />
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="./assets/css/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <header id="app-bar">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-between">
+                <div class="col-2">
+                    <img src="./assets/images/logo.png" alt="">
+                </div>
+                <div class="col-7 text-center"><strong>Hesap</strong></div>
+                <div class="col-2 d-flex justify-content-end">
+                    <div id="app-bar-right">
+                        <div id="toggle-nav">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="content">
+        <form action="#">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mb-2">
+                        <h2 class="form-title">Profil Bilgileri</h2>
+                    </div>
+                    <div class="col-6 mb-4">
+                        <input type="text" placeholder="Adı Soyadı">
+                    </div>
+                    <div class="col-6 mb-4">
+                        <input type="text" placeholder="Ünvan / Şirket Adı">
+                    </div>
+                    <div class="col-6 mb-4">
+                        <input type="number" placeholder="GSM No">
+                    </div>
+                    <div class="col-6 mb-4">
+                        <input type="email" placeholder="Email Adresi">
+                    </div>
+                    <div class="col-12 mb-4">
+                        <input type="text" placeholder="Kullanıcı Adı Linki">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mb-2">
+                        <h2 class="form-title">Parola Bilgileri</h2>
+                    </div>
+                    <div class="col-12 mb-4">
+                        <input type="password" placeholder="Parola">
+                    </div>
+                    <div class="col-12 mb-4">
+                        <input type="password" placeholder="Parola (Tekrar)">
+                    </div>
+                    <div class="col-12 mb-4">
+                        <input type="submit" value="Kaydet">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+    <section id="bottom-nav">
+        <a class="active-link" href="#">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2248 3.42988C13.7441 1.8567 11.2439 1.85671 9.76329 3.42988L4.76925 8.73605C4.11455 9.43167 3.75 10.3509 3.75 11.3062V17.2981C3.75 19.2783 5.2897 20.9173 7.26608 21.0408L12.5 21.3679L17.7322 21.0409C19.7095 20.9173 21.2495 19.2771 21.2483 17.296L21.2447 11.311C21.2442 10.3565 20.8797 9.43816 20.2255 8.74311L15.2248 3.42988ZM12.3692 13.0769C12.4494 13.0276 12.5506 13.0276 12.6308 13.0769L14.6308 14.3049C14.7049 14.3504 14.75 14.4311 14.75 14.518V17.1164C14.75 17.5307 15.0858 17.8664 15.5 17.8664C15.9142 17.8664 16.25 17.5307 16.25 17.1164V14.518C16.25 13.9097 15.9341 13.345 15.4157 13.0267L13.4157 11.7986C12.854 11.4537 12.146 11.4537 11.5843 11.7986L9.58429 13.0267C9.0659 13.345 8.75 13.9097 8.75 14.518V17.1164C8.75 17.5307 9.08579 17.8664 9.5 17.8664C9.91421 17.8664 10.25 17.5307 10.25 17.1164V14.518C10.25 14.4311 10.2951 14.3504 10.3692 14.3049L12.3692 13.0769Z" fill="#292D32" />
+            </svg>
+            <span>Anasayfa</span>
+        </a>
+        <a href="#">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3186 4.90344C13.8206 2.69886 10.6794 2.69885 10.1814 4.90344L10.0677 5.40666C9.97328 5.82485 9.49339 6.02363 9.13089 5.79472L8.69469 5.51927C6.78368 4.31252 4.56251 6.53368 5.76926 8.44468L6.04472 8.88089C6.27363 9.24339 6.07485 9.72328 5.65666 9.81775L5.15344 9.93142C2.94886 10.4294 2.94885 13.5706 5.15344 14.0686L5.65666 14.1823C6.07485 14.2767 6.27363 14.7566 6.04472 15.1191L5.76927 15.5553C4.56251 17.4663 6.78368 19.6875 8.69468 18.4807L9.13089 18.2053C9.49339 17.9764 9.97328 18.1752 10.0677 18.5933L10.1814 19.0966C10.6794 21.3011 13.8206 21.3012 14.3186 19.0966L14.4323 18.5933C14.5267 18.1752 15.0066 17.9764 15.3691 18.2053L15.8053 18.4807C17.7163 19.6875 19.9375 17.4663 18.7307 15.5553L18.4553 15.1191C18.2264 14.7566 18.4252 14.2767 18.8433 14.1823L19.3466 14.0686C21.5511 13.5706 21.5512 10.4294 19.3466 9.93142L18.8433 9.81775C18.4252 9.72328 18.2264 9.24339 18.4553 8.88089L18.7307 8.44469C19.9375 6.53368 17.7163 4.31251 15.8053 5.51926L15.3691 5.79472C15.0066 6.02363 14.5267 5.82485 14.4323 5.40666L14.3186 4.90344ZM11.2867 12.0001C11.2867 11.4681 11.7181 11.0367 12.2501 11.0367C12.7822 11.0367 13.2135 11.4681 13.2135 12.0001C13.2135 12.5322 12.7822 12.9635 12.2501 12.9635C11.7181 12.9635 11.2867 12.5322 11.2867 12.0001ZM12.2501 9.53674C10.8896 9.53674 9.78674 10.6396 9.78674 12.0001C9.78674 13.3606 10.8896 14.4635 12.2501 14.4635C13.6106 14.4635 14.7135 13.3606 14.7135 12.0001C14.7135 10.6396 13.6106 9.53674 12.2501 9.53674Z" fill="#292D32" />
+            </svg>
+            <span>Ayarlar</span>
+        </a>
+        <a href="#">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4.5" y="4" width="6" height="6" rx="2.2" fill="#292D32" stroke="#292D32" stroke-width="1.5" />
+                <rect x="4.5" y="14" width="6" height="6" rx="2.2" fill="#292D32" stroke="#292D32" stroke-width="1.5" />
+                <rect x="14.5" y="4" width="6" height="6" rx="2.2" fill="#292D32" stroke="#292D32" stroke-width="1.5" />
+                <rect x="14.5" y="14" width="6" height="6" rx="2.2" fill="#292D32" stroke="#292D32" stroke-width="1.5" />
+            </svg>
+
+            <span>Anasayfa</span>
+        </a>
+        <a href="#">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2248 3.42988C13.7441 1.8567 11.2439 1.85671 9.76329 3.42988L4.76925 8.73605C4.11455 9.43167 3.75 10.3509 3.75 11.3062V17.2981C3.75 19.2783 5.2897 20.9173 7.26608 21.0408L12.5 21.3679L17.7322 21.0409C19.7095 20.9173 21.2495 19.2771 21.2483 17.296L21.2447 11.311C21.2442 10.3565 20.8797 9.43816 20.2255 8.74311L15.2248 3.42988ZM12.3692 13.0769C12.4494 13.0276 12.5506 13.0276 12.6308 13.0769L14.6308 14.3049C14.7049 14.3504 14.75 14.4311 14.75 14.518V17.1164C14.75 17.5307 15.0858 17.8664 15.5 17.8664C15.9142 17.8664 16.25 17.5307 16.25 17.1164V14.518C16.25 13.9097 15.9341 13.345 15.4157 13.0267L13.4157 11.7986C12.854 11.4537 12.146 11.4537 11.5843 11.7986L9.58429 13.0267C9.0659 13.345 8.75 13.9097 8.75 14.518V17.1164C8.75 17.5307 9.08579 17.8664 9.5 17.8664C9.91421 17.8664 10.25 17.5307 10.25 17.1164V14.518C10.25 14.4311 10.2951 14.3504 10.3692 14.3049L12.3692 13.0769Z" fill="#292D32" />
+            </svg>
+            <span>Anasayfa</span>
+        </a>
+        <a href="#">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.2248 3.42988C13.7441 1.8567 11.2439 1.85671 9.76329 3.42988L4.76925 8.73605C4.11455 9.43167 3.75 10.3509 3.75 11.3062V17.2981C3.75 19.2783 5.2897 20.9173 7.26608 21.0408L12.5 21.3679L17.7322 21.0409C19.7095 20.9173 21.2495 19.2771 21.2483 17.296L21.2447 11.311C21.2442 10.3565 20.8797 9.43816 20.2255 8.74311L15.2248 3.42988ZM12.3692 13.0769C12.4494 13.0276 12.5506 13.0276 12.6308 13.0769L14.6308 14.3049C14.7049 14.3504 14.75 14.4311 14.75 14.518V17.1164C14.75 17.5307 15.0858 17.8664 15.5 17.8664C15.9142 17.8664 16.25 17.5307 16.25 17.1164V14.518C16.25 13.9097 15.9341 13.345 15.4157 13.0267L13.4157 11.7986C12.854 11.4537 12.146 11.4537 11.5843 11.7986L9.58429 13.0267C9.0659 13.345 8.75 13.9097 8.75 14.518V17.1164C8.75 17.5307 9.08579 17.8664 9.5 17.8664C9.91421 17.8664 10.25 17.5307 10.25 17.1164V14.518C10.25 14.4311 10.2951 14.3504 10.3692 14.3049L12.3692 13.0769Z" fill="#292D32" />
+            </svg>
+            <span>Anasayfa</span>
+        </a>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
+</body>
+
+</html>

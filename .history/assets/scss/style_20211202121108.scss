@@ -94,9 +94,7 @@
   bottom: 0;
   background: white;
   z-index: 8;
-  border-top: 1px solid var(--border-color);
-
-  a {
+  border-top: 1px solid var(--border-color) a {
     text-align: center;
     &.active-link {
       svg path {
