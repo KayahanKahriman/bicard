@@ -43,18 +43,17 @@ toggle_nav_button.addEventListener("touchstart", () => {
   mobile_nav.classList.remove("hide-mobile-nav");
 });
 
-document.addEventListener("touchstart", (event) => {
-  if (
-    mobile_nav &&
-    !mobile_nav.contains(event.target) &&
-    !toggle_nav_button.contains(event.target)
-  ) {
-    const body_overlay = document.querySelector(".body-overlay");
-    mobile_nav.classList.remove("hide-mobile-nav");
-    console.log("object");
-    mobile_nav.classList.add("hide-mobile-nav");
-    if (body_overlay) {
-      body_overlay.remove();
+document.addEventListener("touchstart", () => {
+  if (mobile_nav) {
+    if (!mobile_nav.contains(event.target)) {
+      const body_overlay = document.querySelector(".body-overlay");
+      mobile_nav.classList.add("hide-mobile-nav");
+      if (body_overlay) {
+        body_overlay.remove();
+        setTimeout(() => {
+          document.querySelector("#icon-grid").style.pointerEvents = "initial";
+        }, 500);
+      }
     }
   }
 });

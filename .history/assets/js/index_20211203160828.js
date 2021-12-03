@@ -52,8 +52,8 @@ document.addEventListener("touchstart", (event) => {
     const body_overlay = document.querySelector(".body-overlay");
     mobile_nav.classList.remove("hide-mobile-nav");
     console.log("object");
-    mobile_nav.classList.add("hide-mobile-nav");
     if (body_overlay) {
+      mobile_nav.classList.add("hide-mobile-nav");
       body_overlay.remove();
     }
   }

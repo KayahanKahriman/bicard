@@ -194,15 +194,6 @@ body {
   justify-content: center;
   align-items: flex-start;
 
-  #nav-logo {
-    background-color: var(--primary-color);
-    width: 100%;
-    height: 25vmax;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   nav {
     height: 100%;
     display: flex;
@@ -224,22 +215,10 @@ body {
   #mobile-bottom-links {
     display: flex;
     justify-content: center;
-    width: 100%;
     ul {
-      list-style: none;
       width: 100%;
       display: flex;
       justify-content: center;
-      column-gap: 1em;
-      font-size: 0.8em;
-      font-weight: 600;
-      > li {
-        > a {
-          display: flex;
-          align-items: center;
-          column-gap: 0.2em;
-        }
-      }
     }
   }
 }
