@@ -99,10 +99,7 @@
   a {
     text-align: center;
     &.active-link {
-      svg rect,
-      svg stroke,
       svg path {
-        stroke: var(--primary-color) !important;
         fill: var(--primary-color) !important;
       }
     }
@@ -120,7 +117,7 @@
   height: calc(var(--app-bar-height)+var(--fixed-buttons-height));
   top: var(--app-bar-height);
   position: relative;
-  padding: 2em 0 4em 0;
+  padding: 2em 0;
 }
 
 form {
@@ -167,7 +164,7 @@ form {
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  row-gap: 0.5em;
+  row-gap: 1em;
   aspect-ratio: 1 / 1;
   p {
     margin-bottom: 0;
