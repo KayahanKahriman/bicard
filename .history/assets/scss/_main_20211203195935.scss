@@ -131,10 +131,12 @@ body {
   .icon-grid-item-icon {
     border-radius: 10px;
     box-shadow: 0 10px 20px #00000050;
+    width: 100%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    aspect-ratio: 1 / 1;
     a {
       display: block;
       width: 100%;
@@ -257,9 +259,4 @@ body {
 
 .hide-mobile-nav {
   transform: translate3d(100%, 0, 0);
-}
-
-.square {
-  width: 100%;
-  aspect-ratio: 1 / 1;
 }

@@ -173,24 +173,6 @@ form {
   }
 }
 
-.dashboard-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-
-  span {
-    position: absolute;
-    top: 1em;
-    left: 1em;
-  }
-
-  p {
-    margin-bottom: 0;
-    font-weight: 800;
-    font-size: 3em;
-  }
-}
 /*------------------------------------*\
     RESPONSIVE
 \*------------------------------------*/
