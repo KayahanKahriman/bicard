@@ -11,9 +11,7 @@ function appender(container, adding, cssClass) {
 
 Array.from(modal_links).forEach((element) => {
   element.addEventListener("click", () => {
-    if (document.querySelector("#icon-grid")) {
-      document.querySelector("#icon-grid").style.pointerEvents = "none";
-    }
+    document.querySelector("#icon-grid").style.pointerEvents = "none";
     if (inline_popup) {
       inline_popup.classList.remove("hide-content");
     }
@@ -40,12 +38,10 @@ document.addEventListener("touchstart", (event) => {
 const toggle_nav_button = document.querySelector("#toggle-nav");
 const mobile_nav = document.querySelector("#mobile-nav");
 
-if (toggle_nav_button) {
-  toggle_nav_button.addEventListener("touchstart", () => {
-    appender("body", "span", "body-overlay");
-    mobile_nav.classList.remove("hide-mobile-nav");
-  });
-}
+toggle_nav_button.addEventListener("touchstart", () => {
+  appender("body", "span", "body-overlay");
+  mobile_nav.classList.remove("hide-mobile-nav");
+});
 
 document.addEventListener("touchstart", (event) => {
   if (

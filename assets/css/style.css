@@ -3249,6 +3249,19 @@ body {
   width: 100%;
   aspect-ratio: 1 / 1; }
 
+.jumbotron {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  padding: 1em 2em;
+  text-align: center;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5em; }
+
 #app-bar {
   background-color: var(--primary-color);
   height: var(--app-bar-height);
@@ -3359,7 +3372,7 @@ form .form-title {
   font-weight: 300;
   color: var(--light-gray); }
 
-form input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]) {
+form input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="file"]) {
   width: 100%;
   border: 0;
   font-size: 0.8em;

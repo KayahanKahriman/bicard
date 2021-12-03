@@ -275,5 +275,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 0.5em;
+  column-gap: 1em;
+  img {
+    width: 0.5em;
+  }
 }

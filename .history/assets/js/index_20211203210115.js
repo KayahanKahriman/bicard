@@ -11,9 +11,7 @@ function appender(container, adding, cssClass) {
 
 Array.from(modal_links).forEach((element) => {
   element.addEventListener("click", () => {
-    if (document.querySelector("#icon-grid")) {
-      document.querySelector("#icon-grid").style.pointerEvents = "none";
-    }
+    document.querySelector("#icon-grid").style.pointerEvents = "none";
     if (inline_popup) {
       inline_popup.classList.remove("hide-content");
     }
